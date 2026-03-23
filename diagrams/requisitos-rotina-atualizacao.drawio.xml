@@ -1,5 +1,16 @@
-<mxfile>
-    <diagram name="Flow Cells" id="...">
-        <!-- Flow cells for scraper, decision, yes/no labels, steps, clouds -->
-    </diagram>
+<xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="some-id">
+    <mxGraphModel>
+      <root>
+        <mxCell id="scraper" style="..." />
+        <mxCell id="decision" style="..." />
+        <mxCell id="yes" style="..." />
+        <mxCell id="no" style="..." />
+        <mxCell id="end" style="..." />
+        <mxCell id="steps" style="..." />
+        <mxCell id="cloud" style="..." />
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
