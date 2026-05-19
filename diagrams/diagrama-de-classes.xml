@@ -1,0 +1,289 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram id="spectaculum-class-diagram-single-container" name="Diagrama de Classes">
+    <mxGraphModel dx="1683" dy="918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="container" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Domínio Spectaculum" vertex="1">
+          <mxGeometry height="1080" width="1720" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="User" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="170" width="260" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="User_f1" parent="User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="User_f2" parent="User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ username: string" vertex="1">
+          <mxGeometry height="24" width="260" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="User_f3" parent="User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ email: string" vertex="1">
+          <mxGeometry height="24" width="260" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="User_f4" parent="User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="260" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="User_f5" parent="User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ deletedAt?: Date" vertex="1">
+          <mxGeometry height="24" width="260" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="FriendRequest" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="FriendRequest" vertex="1">
+          <mxGeometry height="170" width="320" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FR_f1" parent="FriendRequest" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="320" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FR_f2" parent="FriendRequest" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ requesterId: int" vertex="1">
+          <mxGeometry height="24" width="320" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FR_f3" parent="FriendRequest" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ receiverId: int" vertex="1">
+          <mxGeometry height="24" width="320" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="FR_f4" parent="FriendRequest" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ status: pending|accepted|rejected" vertex="1">
+          <mxGeometry height="24" width="320" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="FR_f5" parent="FriendRequest" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="320" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="Movie" vertex="1">
+          <mxGeometry height="210" width="300" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie_f1" parent="Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie_f2" parent="Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ name: string" vertex="1">
+          <mxGeometry height="24" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie_f3" parent="Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ imdbId?: string" vertex="1">
+          <mxGeometry height="24" width="300" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie_f4" parent="Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ coverUrl?: string" vertex="1">
+          <mxGeometry height="24" width="300" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie_f5" parent="Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ year?: string" vertex="1">
+          <mxGeometry height="24" width="300" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie_f6" parent="Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ plot?: string" vertex="1">
+          <mxGeometry height="24" width="300" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="Movie_f7" parent="Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ deletedAt?: Date" vertex="1">
+          <mxGeometry height="24" width="300" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="Cinema" vertex="1">
+          <mxGeometry height="260" width="340" x="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f1" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f2" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ name: string" vertex="1">
+          <mxGeometry height="24" width="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f3" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ location: string" vertex="1">
+          <mxGeometry height="24" width="340" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f4" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ cep?: string" vertex="1">
+          <mxGeometry height="24" width="340" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f5" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ street?: string" vertex="1">
+          <mxGeometry height="24" width="340" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f6" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ number?: string" vertex="1">
+          <mxGeometry height="24" width="340" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f7" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ neighborhood?: string" vertex="1">
+          <mxGeometry height="24" width="340" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f8" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ city?: string" vertex="1">
+          <mxGeometry height="24" width="340" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f9" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ state?: string" vertex="1">
+          <mxGeometry height="24" width="340" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Cinema_f10" parent="Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ complement?: string" vertex="1">
+          <mxGeometry height="24" width="340" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="Screening" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="Screening" vertex="1">
+          <mxGeometry height="150" width="300" x="760" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Screening_f1" parent="Screening" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Screening_f2" parent="Screening" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ movieId: int" vertex="1">
+          <mxGeometry height="24" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Screening_f3" parent="Screening" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ cinemaId: int" vertex="1">
+          <mxGeometry height="24" width="300" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Screening_f4" parent="Screening" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ exhibitionAt: Date" vertex="1">
+          <mxGeometry height="24" width="300" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Screening_f5" parent="Screening" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="300" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Watchlist" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="WatchlistItem" vertex="1">
+          <mxGeometry height="150" width="280" x="40" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="Watch_f1" parent="Watchlist" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Watch_f2" parent="Watchlist" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ userId: int" vertex="1">
+          <mxGeometry height="24" width="280" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Watch_f3" parent="Watchlist" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ movieId: int" vertex="1">
+          <mxGeometry height="24" width="280" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Watch_f4" parent="Watchlist" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="280" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Watch_f5" parent="Watchlist" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ deletedAt?: Date" vertex="1">
+          <mxGeometry height="24" width="280" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Rating" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="Rating" vertex="1">
+          <mxGeometry height="150" width="280" x="360" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="Rating_f1" parent="Rating" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Rating_f2" parent="Rating" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ score: int" vertex="1">
+          <mxGeometry height="24" width="280" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rating_f3" parent="Rating" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ userId: int" vertex="1">
+          <mxGeometry height="24" width="280" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Rating_f4" parent="Rating" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ movieId: int" vertex="1">
+          <mxGeometry height="24" width="280" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Rating_f5" parent="Rating" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="280" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Comment" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="Comment" vertex="1">
+          <mxGeometry height="170" width="300" x="680" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="Comment_f1" parent="Comment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Comment_f2" parent="Comment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ content: string" vertex="1">
+          <mxGeometry height="24" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Comment_f3" parent="Comment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ userId: int" vertex="1">
+          <mxGeometry height="24" width="300" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Comment_f4" parent="Comment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ movieId: int" vertex="1">
+          <mxGeometry height="24" width="300" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Comment_f5" parent="Comment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="300" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Comment_f6" parent="Comment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ deletedAt?: Date" vertex="1">
+          <mxGeometry height="24" width="300" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="List" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="List" vertex="1">
+          <mxGeometry height="150" width="260" x="1020" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="List_f1" parent="List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="List_f2" parent="List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ name: string" vertex="1">
+          <mxGeometry height="24" width="260" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="List_f3" parent="List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ userId: int" vertex="1">
+          <mxGeometry height="24" width="260" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="List_f4" parent="List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="260" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="List_f5" parent="List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ deletedAt?: Date" vertex="1">
+          <mxGeometry height="24" width="260" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="ListComment" parent="container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;resizeParent=1;resizeLast=0;collapsible=1;whiteSpace=wrap;html=1;" value="ListComment" vertex="1">
+          <mxGeometry height="170" width="300" x="1320" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="LC_f1" parent="ListComment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ id: int" vertex="1">
+          <mxGeometry height="24" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LC_f2" parent="ListComment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ listId: int" vertex="1">
+          <mxGeometry height="24" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LC_f3" parent="ListComment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ userId: int" vertex="1">
+          <mxGeometry height="24" width="300" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="LC_f4" parent="ListComment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ content: string" vertex="1">
+          <mxGeometry height="24" width="300" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="LC_f5" parent="ListComment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ createdAt: Date" vertex="1">
+          <mxGeometry height="24" width="300" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="LC_f6" parent="ListComment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;html=1;" value="+ deletedAt?: Date" vertex="1">
+          <mxGeometry height="24" width="300" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="container" source="User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="List" value="1..* owns">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="20" />
+              <mxPoint x="1150" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="container" source="User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Comment" value="1..* writes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="220" />
+              <mxPoint x="1100" y="220" />
+              <mxPoint x="1100" y="480" />
+              <mxPoint x="830" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="container" source="User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Rating" value="1..* rates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="container" source="User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Watchlist" value="1..* has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="container" source="User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="FriendRequest" value="1..* requester">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="container" source="User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;dashed=1;" target="FriendRequest" value="1..* receiver">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="120" />
+              <mxPoint x="320" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="container" source="Movie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Comment" value="1..* receives">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="520" />
+              <mxPoint x="830" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="container" source="Movie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Rating" value="1..* receives">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="container" source="Movie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Watchlist" value="1..* inWatchlists">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="container" source="Movie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Screening" value="1..* scheduled">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r11" edge="1" parent="container" source="Cinema" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="Screening" value="1..* hosts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r12" edge="1" parent="container" source="List" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;" target="Movie" value="*..* list_movie">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r13" edge="1" parent="container" source="List" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="ListComment" value="1..* receives">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r14" edge="1" parent="container" source="User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;" target="ListComment" value="1..* writes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="10" />
+              <mxPoint x="1470" y="10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
